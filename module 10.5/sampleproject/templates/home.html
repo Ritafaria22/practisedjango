@@ -1,0 +1,49 @@
+<html>
+
+    <h2>Author : {{author}}</h2>
+    <h2>Age : {{age}}</h2> 
+    <h2>   {{list}}</h2>
+    <h2>   {{cap | capfirst}}</h2>
+    <h2> slice=  {{cap | slice:":4"}}</h2>
+    <h2>   {{ slash |  addslashes}}</h2>
+    <h2>   {{ "coding is fun" |  cut:" "}}</h2>
+    <h2>   {{ "coding is fun" |  truncatechars:6}}</h2>
+    <h2>   {{ students | dictsort:"name" }}</h2>
+
+    <h2> first:  {{ fruits | first }}</h2>
+    <h2> last:  {{ fruits | last }}</h2>
+    <h2> unordered list:  {{ fruits | unordered_list }}</h2>
+    <h2> length of name=  {{ names | length }}</h2>
+    <h2> list of name=  {{ names | make_list }}</h2>
+    <h2>  slung:  {{ up | slugify }}</h2>
+    <h2>  word count :  {{ up | wordcount }}</h2>
+    <h2>   striptag: {{ var | striptags }}</h2>
+    <h2> you have  {{ count }} messages{{ count|pluralize }} </h2>
+     
+    <h1> <pre>{{ line | linenumbers }}</pre> </h1>
+    <h2>   {{ up | upper }}</h2>
+    <h2>   {{ low | lower }}</h2>
+    <h2>   {{ tytle | title }}</h2>
+    <h2>   {{ randomm | random }}</h2>
+    <h2> the time is :  {{ time | time:"H:i" }}</h2>
+    <h2>  posten on:  {{ posttime | timesince:now }}</h2>
+
+    <h2>   {{ cutt| cut:" "}}</h2>
+    <h2>   {{ birthday| date:"D d M Y"}}</h2>
+    <h2>   {{ size| filesizeformat }}</h2>
+    <h2>   {{ join| join:" // " }}</h2>
+
+    <pre><h2>{{ centerr| center:"30"}}</h2></pre>
+
+    <p>{{ tag|safe }}</p>
+    <h2>{{ "<p>I <em>really</em> like ice cream!</p>"|escape }}</h2>
+  
+    {{ 12 | add:"5" }}
+    the length is {{val | length}}
+
+    <h1>our home page</h1>
+    <h1> <a href="/">Home</a></h1>
+    <h1> <a href="/firstapp/about/">first app/About</a>  </h1>
+    <h1> <a href="/firstapp/contact/">first app/contact</a>  </h1>
+     
+</html>
