@@ -24,7 +24,7 @@ class contactform(forms.Form):
     favorite_color1 = forms.ChoiceField(choices=FAVORITE_COLORS_CHOICES)
     favorite_color2 = forms.ChoiceField(widget=forms.RadioSelect, choices=FAVORITE_COLORS_CHOICES)
     favorite_colors = forms.MultipleChoiceField(choices=FAVORITE_COLORS_CHOICES)
-    favorite_colors2 = forms.MultipleChoiceField(widget=forms.CheckboxSelectMultiple,choices=FAVORITE_COLORS_CHOICES,disabled = True)
+    favorite_colors2 = forms.MultipleChoiceField(widget=forms.CheckboxSelectMultiple,choices=FAVORITE_COLORS_CHOICES)
     roll_number = forms.IntegerField( 
                      help_text = "Enter 6 digit roll number"
                      ) 
